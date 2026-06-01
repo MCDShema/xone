@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.digitalkiss.xone.midi-agent</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/bin/xone-midi-agent</string>
+    </array>
+
+    <!-- LaunchAgent runs in the user's session (login → logout). CoreMIDI
+         virtual sources are per-session, so this is the right scope. -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>KeepAlive</key>
+    <true/>
+
+    <!-- Throttle in case the agent crash-loops -->
+    <key>ThrottleInterval</key>
+    <integer>5</integer>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/xone-midi-agent.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/xone-midi-agent.err.log</string>
+</dict>
+</plist>
