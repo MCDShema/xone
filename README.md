@@ -164,3 +164,6 @@ sudo rm -f /usr/local/bin/xone-midi-agent
 sudo rm -rf /Library/Audio/Plug-Ins/HAL/XoneHAL.driver
 sudo launchctl kickstart -k system/com.apple.audio.coreaudiod
 ```
+## Coffi
+monobank: https://send.monobank.ua/jar/62NVYxHEid
+[![Donate](https://img.shields.io/badge/Donate-Monobank-blue)]([https://send.monobank.ua/jar/XXXXXXXX](https://send.monobank.ua/jar/62NVYxHEid))
